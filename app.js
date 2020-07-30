@@ -1700,3 +1700,97 @@
 // withdraw(amount);
 
 
+// Chapter 43-48 Task #3
+
+function removeBtn(a){
+    var table = document.getElementById('table');
+    table.deleteRow(a);
+}
+
+
+// Chapter 43-48 Task #4
+
+function changeImage(){
+    var img1 = document.getElementById('img1');
+    img1.src = "https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+}
+function imageBefore(){
+    var img1 = document.getElementById('img1');
+    img1.src = "https://images.unsplash.com/photo-1523676060187-f55189a71f5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
+}
+
+
+// Chapter 43-48 Task #5
+
+var a=0;
+function increase(){
+    a +=1;
+    var addn=document.getElementById("a")
+    addn.innerHTML=a;
+}
+
+function decrease(){
+    a +=-1;
+    var addn=document.getElementById("a")
+    addn.innerHTML=a;
+}
+
+
+// Chapter 43-48 Task #1
+
+function submit(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    document.write("Full Name: "+name+"<br>")
+    document.write("Email Address: "+email+"<br>")
+    document.write("Password: "+password+"<br>")
+}
+
+
+// Chapter 43-48 Task #2
+
+function readMore(){
+    var text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum necessitatibus sed culpa eligendi pariatur harum soluta tempore libero tempora porro delectus magni facilis quo cum cumque, itaque accusamus optio <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum necessitatibus sed culpa eligendi pariatur harum soluta tempore libero tempora porro delectus magni facilis quo cum cumque, itaque accusamus optio";
+    var pere = document.getElementById('pera');
+    pera.innerHTML = pera.innerHTML + text;
+    var btn = document.getElementById('readmore')
+    btn.disabled=true;
+}
+
+
+// Chapter 43-48 Task #3
+
+var form = document.getElementById('StudentFormEdit');
+form.style.display = "none"
+var newRow = document.getElementById('newRow');
+newRow.style.display = "none";
+function removeBtn(a){
+    var table = document.getElementById('table1');
+    table.deleteRow(a);
+}
+function editData(a){
+    var form = document.getElementById('StudentFormEdit');
+    form.style.display = "block";
+}
+function addData(){
+    var form = document.getElementById('Studentform');
+    form.style.display = "none"
+    var n = document.getElementById('n').value;
+    var classes = document.getElementById('class').value;
+    var tname = document.getElementById('tname');
+    var tclass = document.getElementById('tclass');
+    newRow.style.display = "block";
+    tname.innerHTML=n;
+    tclass.innerHTML=classes;
+}
+function EditAddData(){
+    var n = document.getElementById('en').value;
+    var classes = document.getElementById('eclass').value;
+    var str = ["one", "two", "three", "four", "five"];
+    var desiredRow = document.getElementById(str[a-1]);
+    desiredRow.childNodes[1].innerHTML=n;
+    desiredRow.childNodes[2].innerHTML=classes;
+    var form = document.getElementById('StudentFormEdit');
+    form.style.display = "none"
+};

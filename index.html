@@ -6,7 +6,6 @@
     <title>Chap 1 to 67 Assignment</title>
     <style>
         body{
-            text-align: center;
             padding-top: 20px;
         }
     </style>
@@ -14,6 +13,146 @@
 <body>
     <h1>JavaScript 5th Assignment (Chpater 1 to 67)</h1>
     <p>The Assignment is made by Muhammad Mubashir Aslam Roll No. WM7971</p>
+
+    <h3>Chapter 43-48 Task #1</h3>
+    <a href="#" onclick="alert('JavaScript Alert');">Alert n Click</a>
+
+    <h3>Chapter 43-48 Task #2</h3>
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max.jpg" onclick="alert('Thanks for purchasing a phone from us');">
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg" onclick="alert('Thanks for purchasing a phone from us');">
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-7-plus-r2.jpg" onclick="alert('Thanks for purchasing a phone from us');">
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-7r4.jpg" onclick="alert('Thanks for purchasing a phone from us');">
+
+    <h3>Chapter 43-48 Task #3</h3>
+    <table id="table">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><a href="#" onclick="removeBtn(1)">Delete</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><a href="#" onclick="removeBtn(2)">Delete</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><a href="#" onclick="removeBtn(3)">Delete</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><a href="#" onclick="removeBtn(4)">Delete</a></td>
+        </tr>
+    </table>
+
+    <h3>Chapter 43-48 Task #4</h3>
+    <img id="img1" width="400px" src="https://images.unsplash.com/photo-1523676060187-f55189a71f5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" onmousemove="changeImage();" onmouseout="imageBefore();">
+
+    <h3>Chapter 43-48 Task #5</h3>
+    <h5 id="a">0</h5>
+    <button onclick="increase();">Increase</button>
+    <button onclick="decrease();">Decrease</button>
+
+    <h3>Chapter 49-52 Task #1</h3>
+    <form>
+        <label for="name">Enter Full Name: 
+            <input type="text" id="name">
+        </label> <br>
+        <label for="email">Enter Email Address: 
+            <input type="email" id="email">
+        </label> <br>
+        <label for="password">Set Password: 
+            <input type="password" id="password">
+        </label> <br>
+        <!-- <input type="submit" value="Sign Up" onclick="submit();"> -->
+        <a href="#" onclick="submit()">Submit</a>
+    </form>
+
+    <h3>Chapter 49-52 Task #2</h3>
+    <h4>Details</h4>
+    <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum necessitatibus sed culpa eligendi pariatur harum soluta tempore libero tempora porro delectus magni facilis quo cum cumque, itaque accusamus optio
+    <br> </p>
+    <button onclick="readMore();" id="readmore">Read More</button>
+
+    <h3>Chapter 49-52 Task #3</h3>
+    <h4>Students Data</h4>
+    <table id="table1">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr id="one">
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><a href="#" onclick="removeBtn(1)">Delete</a></td>
+            <td><a href="#" onclick="editData(1)">Edit</a></td>
+        </tr>
+        <tr id="two">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><a href="#" onclick="removeBtn(2)">Delete</a></td>
+            <td><a href="#" onclick="editData(2)">Edit</a></td>
+        </tr>
+        <tr id="three">
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><a href="#" onclick="removeBtn(3)">Delete</a></td>
+            <td><a href="#" onclick="editData(3)">Edit</a></td>
+        </tr>
+        <tr id="four">
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><a href="#" onclick="removeBtn(4)">Delete</a></td>
+            <td><a href="#" onclick="editData(4)">Edit</a></td>
+        </tr>
+        <tr id="newRow" id="five">
+            <td>4</td>
+            <td id="tname"></td>
+            <td id="tclass"></td>
+            <td><a href="#" onclick="removeBtn(5)">Delete</a></td>
+            <td><a href="#" onclick="editData(5)">Edit</a></td>
+        </tr>
+    </table>
+    <form id="Studentform">
+        <h4>Add a Student</h4>
+        <label for="name">Enter Student Name: 
+            <input type="text" id="n">
+        </label> <br>
+        <label for="class">Enter Classes: 
+            <input type="number" id="class">
+        </label> <br> <br>
+        <input type="submit" value="Create Table" onclick="addData();">
+    </form>
+    <form id="StudentFormEdit">
+        <h4>Edit a Student Data</h4>
+        <label for="name">Enter Student Name: 
+            <input type="text" id="en">
+        </label> <br>
+        <label for="class">Enter Classes: 
+            <input type="number" id="eclass">
+        </label> <br> <br>
+        <input type="submit" value="Save" onclick="EditAddData();">
+    </form>
+    
 <script src="app.js"></script>
 </body>
 </html>
