@@ -1523,8 +1523,180 @@
 //     result = result.toFixed(2);
 //     document.write("The area is "+result+"<br>");
 // };
-
 // var radius = +prompt("Enter radius of the circle");
 // calcCircumference(radius);
 // calcArea(radius);
+
+
+// Chapter 38-42 Task #1
+
+// function power(a,b)
+// {
+//     var result=a;
+//     for(var i=1;i<b;i++){
+//         result = result*a;
+//     }
+//     return result;
+// }
+// alert(power(2,4));
+
+
+// Chapter 38-42 Task #2
+
+// var yearToCheck = +prompt("Enter any year");
+// if(yearToCheck % 4 == 0){
+//     alert("This is a leap year");
+// } else alert("This is not a leap year");
+
+
+// Chapter 38-42 Task #3
+
+// function calcTriangle(a,b,c)
+// {
+//     var s = ( a + b + c ) / 2;
+//     var area = s * (s-a) * (s-b) * (s-c);
+//     return area;
+// };
+// var result=calcTriangle(3,3,3);
+// alert(result)
+
+
+// Chapter 38-42 Task #4
+
+// function Average(a,b,c)
+// {
+//     var result = (a + b + c) /3
+//     return result;
+// };
+
+// function Percentage(a,b,c)
+// {
+//     var result = ((a+b+c) / 300) *100;
+//     return result;
+// };
+// function mainFunction()
+// {
+//     var subject1 = +prompt("Enter marks gained in first subject /100");
+//     var subject2 = +prompt("Enter marks gained in second subject /100");
+//     var subject3 = +prompt("Enter marks gained in third subject /100");
+//     var average = Average(subject1,subject2,subject3);
+//     var percentage = Percentage(subject1,subject2,subject3);
+//     document.write("Average of all marks: "+average+"<br>");
+//     document.write("Percentage : "+percentage+"<br>");
+// }
+// mainFunction();
+
+
+// Chapter 38-42 Task #5
+
+// var name = "Mubashir Aslam"
+// function indexFinder(a,str)
+// {
+//     var index;
+//     for(var i=0;i<str.length;i++){
+//         if(str[i] === a){
+//             index = i;
+//         }
+//     }
+//     return index;
+// };
+// alert(indexFinder("b",name));
+
+
+// Chapter 38-42 Task #6
+
+// function vowelRemover(str)
+// {
+//     return str.replace(/[aeiou]/gi, '');
+// }
+// document.write("Main sentence: "+"consectetur adipiscing elit"+"<br>"+"After removing vowels: ")
+// document.write(vowelRemover("consectetur adipiscing elit"))
+
+
+// Chapter 38-42 Task #7
+
+// function findOccurrences(){
+//     var str = "Pleases read this application and give me gratuity";
+//     var count = 0;
+//     let haveSeenVowel = false;
+
+//    for (const letter of str.toLowerCase()) {
+//      switch (letter) {
+//        case 'a':
+//        case 'e':
+//        case 'i':
+//        case 'o':
+//        case 'u':
+//          {
+//            if (haveSeenVowel) {
+//              count++;
+//              haveSeenVowel = false;
+//            } else {
+//              haveSeenVowel = true;
+//            }
+//            break;
+//          }
+//        default:
+//          haveSeenVowel = false
+//      }
+//    }
+ 
+//    return count
+// }
+// document.write(findOccurrences());
+
+
+// Chapter 38-42 Task #8
+
+// var distanceKM = +prompt("Enter distance between two cities in KM");
+// function distanceInMeter(s){
+//     var result = s*1000;
+//     return result;
+// }
+// function distanceInFeet(s){
+//     var result = s*3280.84;
+//     return result;
+// }
+// function distanceInInches(s){
+//     var result = s*39370.1;
+//     return result;
+// }
+// function distanceInCM(s){
+//     var result = s*100000;
+//     return result;
+// }
+// document.write("Distance in KM: "+distanceKM+"<br>");
+// document.write("Distance in Meter: "+distanceInMeter(distanceKM)+"<br>");
+// document.write("Distance in Inches: "+distanceInInches(distanceKM)+"<br>");
+// document.write("Distance in KM: "+distanceInCM(distanceKM)+"<br>");
+
+
+// Chapter 38-42 Task #9
+
+// function calcPayOverTime(h){
+//     if (h > 40){
+//         var OT=h-40;
+//         overpay=OT*12;
+//         document.write("Your Overtime Pay is Rs."+overpay)
+//     }
+//     else{
+//         document.write("You have not worked overtime")
+//     };
+// }
+// var hours = +prompt("Enter total hours of working");
+// document.write("Working Hours: "+hours+"<br>");
+// calcPayOverTime(hours);
+
+
+// Chapter 38-42 Task #10
+
+// var amount = +prompt("Enter amount to withdraw");
+// function withdraw(a){
+//     var hundreds=Math.floor(a/100);
+//     var fifties=Math.floor((a % 100) /50);
+//     var tens=(((a % 100) % 50) / 10);
+//     document.write("You will have "+hundreds+" hundreds notes "+fifties +" fifty notes "+tens+" ten notes")
+// }
+// withdraw(amount);
+
 
